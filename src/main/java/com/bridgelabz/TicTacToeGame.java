@@ -2,6 +2,15 @@ package com.bridgelabz;
 
 public class TicTacToeGame {
     public static void main(String[] args) {
-        System.out.println("Welcome to Tic Toc Toe Game Program");
+        TicTacToeGame obj = new TicTacToeGame();
+        obj.createBoard();
+
+    }
+
+    void createBoard() {
+        String[] board = new String[10];
+        for (int i = 1; i < board.length; i++) {
+            board[i] = String.valueOf(i);
+        }
     }
 }
